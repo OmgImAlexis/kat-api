@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      "kat-api",
+      "/Users/xo/code/Olivia"
+    ]
+  ],
+  "_from": "kat-api@*",
+  "_id": "kat-api@0.0.3",
+  "_inCache": true,
+  "_location": "/kat-api",
+  "_nodeVersion": "0.12.1",
+  "_npmUser": {
+    "email": "press@popcorntime.io",
+    "name": "popcorntime"
+  },
+  "_npmVersion": "2.5.1",
+  "_phantomChildren": {
+    "pop-iterate": "1.0.1",
+    "weak-map": "1.0.5"
+  },
+  "_requested": {
+    "name": "kat-api",
+    "raw": "kat-api",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/kat-api/-/kat-api-0.0.3.tgz",
+  "_shasum": "7b0c67704ccdf00e0f81c2f5abd71793d561b9ae",
+  "_shrinkwrap": null,
+  "_spec": "kat-api",
+  "_where": "/Users/xo/code/Olivia",
+  "author": {
+    "email": "hello@popcorntime.io",
+    "name": "Popcorn Time"
+  },
+  "bugs": {
+    "url": "https://git.popcorntime.io/popcorntime/kat-api/issues"
+  },
+  "dependencies": {
+    "URIjs": "^1.15.0",
+    "q": "2.0.3",
+    "request": "^2.55.0"
+  },
+  "description": "KAT (Kickass) api wrapper with mirror fallback and advanced search parameters.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "7b0c67704ccdf00e0f81c2f5abd71793d561b9ae",
+    "tarball": "http://registry.npmjs.org/kat-api/-/kat-api-0.0.3.tgz"
+  },
+  "gitHead": "e97650d180209c4ba50fe03fe932a0954c601e62",
+  "installable": true,
+  "keywords": [
+    "api",
+    "json",
+    "kat",
+    "kickass",
+    "search",
+    "torrent"
+  ],
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "popcorntime",
+      "email": "press@popcorntime.io"
+    }
+  ],
+  "name": "kat-api",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://git.popcorntime.io/popcorntime/kat-api.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.3"
+}

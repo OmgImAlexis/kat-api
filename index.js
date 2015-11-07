@@ -99,154 +99,57 @@ var search = function (query) {
 var filteredLangCode = function (langcode) {
     if (langcode.replace(/\D/g,'') !== '') return langcode;
 
-    var lang_id = '';
-    switch (langcode) {
-        case 'en':
-            lang_id = 2;
-            break;
-        case 'sq':
-            lang_id = 42;
-            break;
-        case 'ar':
-            lang_id = 7;
-            break;
-        case 'eu':
-            lang_id = 44;
-            break;
-        case 'bn':
-            lang_id = 46;
-            break;
-        case 'pt-br':
-            lang_id = 39;
-            break;
-        case 'bg':
-            lang_id = 37;
-            break;
-        case 'yue':
-            lang_id = 45;
-            break;
-        case 'ca':
-            lang_id = 47;
-            break;
-        case 'zh':
-            lang_id = 10;
-            break;
-        case 'hr':
-            lang_id = 34;
-            break;
-        case 'cs':
-            lang_id = 32;
-            break;
-        case 'da':
-            lang_id = 26;
-            break;
-        case 'nl':
-            lang_id = 8;
-            break;
-        case 'tl':
-            lang_id = 11;
-            break;
-        case 'fi':
-            lang_id = 31;
-            break;
-        case 'fr':
-            lang_id = 5;
-            break;
-        case 'de':
-            lang_id = 4;
-            break;
-        case 'el':
-            lang_id = 30;
-            break;
-        case 'he':
-            lang_id = 25;
-            break;
-        case 'hi':
-            lang_id = 6;
-            break;
-        case 'hu':
-            lang_id = 27;
-            break;
-        case 'it':
-            lang_id = 3;
-            break;
-        case 'ja':
-            lang_id = 15;
-            break;
-        case 'kn':
-            lang_id = 49;
-            break;
-        case 'ko':
-            lang_id = 16;
-            break;
-        case 'lt':
-            lang_id = 43;
-            break;
-        case 'ml':
-            lang_id = 21;
-            break;
-        case 'cmn':
-            lang_id = 23;
-            break;
-        case 'ne':
-            lang_id = 48;
-            break;
-        case 'no':
-            lang_id = 19;
-            break;
-        case 'fa':
-            lang_id = 33;
-            break;
-        case 'pl':
-            lang_id = 9;
-            break;
-        case 'pt':
-            lang_id = 17;
-            break;
-        case 'pa':
-            lang_id = 35;
-            break;
-        case 'ro':
-            lang_id = 18;
-            break;
-        case 'ru':
-            lang_id = 12;
-            break;
-        case 'sr':
-            lang_id = 28;
-            break;
-        case 'sl':
-            lang_id = 36;
-            break;
-        case 'es':
-            lang_id = 14;
-            break;
-        case 'sv':
-            lang_id = 20;
-            break;
-        case 'ta':
-            lang_id = 13;
-            break;
-        case 'te':
-            lang_id = 22;
-            break;
-        case 'th':
-            lang_id = 24;
-            break;
-        case 'tr':
-            lang_id = 29;
-            break;
-        case 'uk':
-            lang_id = 40;
-            break;
-        case 'vi':
-            lang_id = 38;
-            break;
-        default:
-            lang_id = '';
-    }
+    var lang_id = {
+        'en': 2,
+        'sq': 42,
+        'ar': 7,
+        'eu': 44,
+        'bn': 46,
+        'pt-br': 39,
+        'bg': 37,
+        'yue': 45,
+        'ca': 47,
+        'zh': 10,
+        'hr': 34,
+        'cs': 3,
+        'da': 26,
+        'nl': 8,
+        'tl': 11,
+        'fi': 31,
+        'fr': 5,
+        'de': 4,
+        'el': 30,
+        'he': 25,
+        'hi': 6,
+        'hu': 27,
+        'it': 3,
+        'ja': 15,
+        'kn': 49,
+        'ko': 16,
+        'lt': 43,
+        'ml': 21,
+        'cmn': 23,
+        'ne': 48,
+        'no': 19,
+        'fa': 33,
+        'pl': 9,
+        'pt': 17,
+        'pa': 35,
+        'ro': 18,
+        'ru': 12,
+        'sr': 28,
+        'sl': 36,
+        'es': 14,
+        'sv': 20,
+        'ta': 13,
+        'te': 22,
+        'th': 24,
+        'tr': 29,
+        'uk': 40,
+        'vi': 40
+    };
 
-    return lang_id;
+    return lang_id[langcode] > 0 ? lang_id[langcode] : '';
 };
 
 module.exports = {

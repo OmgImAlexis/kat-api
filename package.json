@@ -43,7 +43,7 @@
     "url": "https://git.popcorntime.io/popcorntime/kat-api/issues"
   },
   "dependencies": {
-    "URIjs": "^1.15.0",
+    "urijs": "^1.15.0",
     "q": "2.0.3",
     "request": "^2.55.0"
   },
